@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulier</title>
+<meta charset="UTF-8">
+</head>
+    <body>
+
+  <!--UTF-8 betekend eigenlijK:
+  Browser, gebruik de set karakters uit tabel UTF-8 wat overeenkomt met een normaal Nederlands toetsenbord met +-/? tekens -->
+  <!-- content to be placed inside <body>…</body> -->
+
+        <header>
+            <h1>CMD Amsterdam -Intranet</h1>
+            <p>Communication and Multimedia Design is een ontwerpopleiding voor interactieve media in Amsterdam.</p>
+            <section>
+                <img src="https://raw.githubusercontent.com/CMDA/FED1/gh-pages/Maakopdracht/cmd_icon_letter_c.png" alt="">
+                <img src="https://raw.githubusercontent.com/CMDA/FED1/gh-pages/Maakopdracht/cmd_icon_letter_m.png" alt="">
+                <img src="https://raw.githubusercontent.com/CMDA/FED1/gh-pages/Maakopdracht/cmd_icon_letter_d.png" alt="">
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Opleiding</a></li>
+                    <li><a href="#">Onderwijsprogramma</a></li>
+                    <li><a href="#">Organisatie</a></li>
+                    <li><a href="#">Stages en projecten</a></li>
+                </ul>
+            </nav>
+            <form>
+                <input type="text" id="zoekoptie" placeholder="Typ Hier...">
+            </form>
+            <a href="#">Profielpagina Elena Harris</a>
+        </header>
+
+        <article>
+            <h1>Aanmelden</h1>
+            <p>Bent u geïnteresseerd in samenwerken met CMD Amsterdam? Dat kan! Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook lopen de studenten stage, in het tweede en afstudeerjaar.</p>
+
+            <p><em>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam.</em></p>
+            <p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen. Wij nemen zo nodig contact met u op nadat het formulier is verstuurd. Voor vragen of opmerkingen kunt u <a href="contact.html">contact</a> met ons op.</p>
+        </article>
+
+        <form>
+     <!-- label is een 'label' voor het input element. het 'for' attribuut communiceert met een id in de input, for="name"     zegt "dit label bevat informatie voor het input id="name" -->
+            <fieldset>
+                <legend>Gegevens</legend>
+                <label for="naam">Naam:</label>
+                <input type="text" required name="naam" id="naam"/>
+
+                <label for="bedrijf">Bedrijf:</label>
+                <input type="text" required name="bedrijf" id="bedrijf"/>
+
+                <label for="postcode">Postcode:</label>
+                <input type="text" required name="postcode" id="postcode"/>
+
+                <label for="plaats">Plaats:</label>
+                <input type="text" required name="plaats" id="plaats"/>
+
+                <label for="telefoon">Telefoon:</label>
+                <input type="tel" required name="telefoon" id="telefoon"/>
+
+                <label for="email">E-mail:</label>
+                <input type="email" required name="email" id="email"/>
+
+                
+                <select name="browser">
+                    <option value="" selected>Ik wil mij aanmelden voor</option>
+                    <option value="project">Voor een project</option>
+                    <option value="stage">Als stagebedrijf</option>
+                    <!--bron: werkgroep presentatie 1-->
+                </select>
+            </fieldset>
+
+
+
+            <fieldset>
+                <legend>Project</legend>
+                <label for="titel">Titel:</label>
+                <input type="text" required name="titel" id="titel"/>
+
+                <label>Opdrachtomschrijving:</label>
+                <textarea rows="7" required cols="30" name="TextArea1" id="TA1"></textarea>
+
+                <label for="TA2">Doelgroepomschrijving:</label>
+                <textarea rows="7" required cols="30" name="TextArea2" id="TA2"></textarea>
+
+                <label for="TA3">Doelstelling / Intentie van project:</label>
+                <textarea rows="7" required cols="30" name="TextArea3" id="TA3"></textarea>
+
+                <label for="looptijd">Looptijd</label>
+                <input id="looptijd" required>
+
+                <label for="deadline">Deadline</label>
+                <input id="deadline" required>
+
+                <select name="browser">
+                    <option value="" selected>Geschikt voor</option>
+                    <option value="eerstejaar">eerstejaars studenten</option>
+                    <option value="tweedejaar">tweedejaars studenten</option>
+                    <option value="derdejaar">derdejaars studenten</option>
+                    <option value="afstudeer">afstudeer studenten</option>
+                    <option value="onbekend">onbekend</option>
+                </select>
+
+                <label for="TA4">Opmerking:</label>
+                <textarea rows="7" cols="30" name="TextArea4" id="TA4">
+                </textarea>
+                <!--bron: http://www.quackit.com/html_5/tags/html_textarea_tag.cfm-->
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Stage</legend>
+                <select name="browser">
+                    <option value="" selected>Geschikt voor</option>
+                    <option value="tweedejaar">tweedejaars studenten</option>
+                    <option value="afstudeer">afstudeer studenten</option>
+                    <option value="onbekend">onbekend</option>
+                </select>
+
+                <select name="browser">
+                    <option value="" selected>Hoe lang is de stage?</option>
+                    <option value="tweedejaar">10 weken</option>
+                    <option value="afstudeer">20 weken</option>
+                </select>
+
+                <label for="datumstage">Datum stage:</label>
+                <input type="date" required name="datumstage" id="datumstage"/>
+                <label for="TA5">Beschrijving werkzaamheden:</label>
+                <textarea rows="7" required cols="30" name="TextArea5" id="TA5"></textarea>
+                <label for="bedrijfsnaam">Bedrijfsnaam:</label>
+                <input type="text" required name="bedrijfsnaam" id="bedrijfsnaam"/>
+
+                <label for="adres">Adres:</label>
+                <input type="text" required name="adres" id="adres"/>
+
+                <label for="postcodestage">Postcode:</label>
+                <input type="text" required name="postcodestage" id="postcodestage"/>
+
+                <label for="stageplaats">Plaats:</label>
+                <input type="text" required name="stageplaats" id="stageplaats"/>
+
+                <label for="sector">Sector:</label>
+                <input type="text" required name="sector" id="sector"/>
+
+                <label for="business">Core Business:</label>
+                <input type="text" required name="business" id="business"/>
+
+                <label for="TA6">Opmerkingen:</label>
+                <textarea rows="7" cols="30" name="TextArea6" id="TA6"></textarea>
+            </fieldset>
+        </form>
+    </body>
+</html>
